@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@0xcert/cert": "^1.2.0-alpha1",
+    "@0xcert/ethereum-asset-ledger": "^1.2.0-alpha1",
+    "@0xcert/ethereum-metamask-provider": "^1.2.0-alpha1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "2.1.8"
