@@ -13,7 +13,7 @@ import {
 // Assets Ledgers are groups of tokens that are managed by certain users just like mods in a chat to do what's required
 // The Capabilities determine what those mods can do with the assets they are managing
 // The Ethereum address that deploys this ledger has full powers to do whatever he wants as the administrator
-
+const Web3 = require("web3");
 const path = require("path");
 const fs = require("fs");
 
@@ -56,6 +56,7 @@ class App extends Component {
 
   //To get user ERC721 token balance - counter of how many assets a user owns
   async getUserBalance() {
+    const web3 = new Web3(this.state.provider);
     const balance = await this.state.ledger.getBalance(web3.eth.accounts[0]);
     return balance;
   }
